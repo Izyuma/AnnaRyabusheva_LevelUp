@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Happy ticket positive suite" verbose="1" >
+    <groups>
+        <run>
+            <include name="positive"/>
+        </run>
+    </groups>
+
+    <test name="Positive">
+        <packages>
+            <package name="ru.levelp.at.homework2"/>
+        </packages>
+    </test>
+</suite>
