@@ -1,6 +1,6 @@
-package src.main.HW2;
+package ru.levelp.at.HW2;
 
-public class LakyTikket {
+public class HappyTicket {
     public static void main(String[] args) {
     }
 
