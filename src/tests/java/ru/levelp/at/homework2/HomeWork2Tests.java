@@ -16,21 +16,21 @@ public class HomeWork2Tests {
     @Test(groups = {"positive"}, dataProvider = "luckyTicketDataProvider",
             dataProviderClass = HomeWork2DataProvider.class)
     public void testLuckyTicket(Integer number) {
-        assertEquals(HappyTicket.isMyTicketLucky(number), true,
+        assertEquals(happyTicket.isMyTicketLucky(number), true,
                 "Ошибка проверки на счастливый билет");
     }
 
     @Test(groups = {"negative"}, dataProvider = "notLuckyTicketDataProvider",
             dataProviderClass = HomeWork2DataProvider.class)
     public void testNotLuckyTicket(Integer number) {
-        assertEquals(HappyTicket.isMyTicketLucky(number), false,
+        assertEquals(happyTicket.isMyTicketLucky(number), false,
                 "Ошибка проверки на не счастливый билет");
     }
 
     @Test(groups = {"negative"}, dataProvider = "sizeNumberDataProvider",
             dataProviderClass = HomeWork2DataProvider.class, expectedExceptions = {IllegalArgumentException.class})
     public void testSizeNumber(Integer number) {
-        HappyTicket.isMyTicketLucky(number);
+        happyTicket.isMyTicketLucky(number);
     }
 
 }
