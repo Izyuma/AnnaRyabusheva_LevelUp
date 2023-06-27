@@ -1,17 +1,8 @@
 package src.main.HW2;
 
-import java.io.IOException;
-import java.util.ArrayList;
-
 public class LakyTikket {
     public static void main(String[] args) {
-
-//        System.out.println(isMyTicketLucky(123006));
-//        System.out.println(isMyTicketLucky(555555));
-//        System.out.println(isMyTicketLucky(248754687));
-
     }
-
 
     public static boolean isMyTicketLucky(int ticketNumber) {
         if (ticketNumber >= 0 && ticketNumber < 1000000) {
